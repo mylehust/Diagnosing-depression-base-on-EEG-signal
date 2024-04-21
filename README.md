@@ -34,7 +34,8 @@ Các công việc làm được trong tuần này:
 
 1. **TIẾN HÀNH TRIỂN KHAI TRÊN DATASET MODMA**
 
-![A diagram of a process
+![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/3e4cd466-84d0-4bf7-a31a-559657b0a885)
+
 
 Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.001.png)
 
@@ -46,13 +47,15 @@ Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab1973
 
 ![](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.002.png)
 
-![A diagram of a diagram of a electrode placement
+![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/57708b54-4cd2-4b6c-ae0a-7b2679a6ebb7)
+
 
 Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.003.png)
 
 Với dataset MODMA này, ta chỉ xét các đặc tính tuyến tính và phi tuyến của các sóng cơ bản delta (0,5–4 Hz), theta (4–8 Hz), alpha (8–13 Hz) và dải beta (13–40 Hz), nên ta sẽ dùng bộ lọc Band Pass filter để chỉ lấy trong vùng từ 0 - 40Hz
 
-![A graph showing a number of colors
+![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/01196642-9860-416c-a2b1-fd121e4b8472)
+
 
 Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.004.png)
 
@@ -64,7 +67,8 @@ Sóng EEG được đặc trưng bởi 4 loại sóng cơ bản: Alpha, Beta, De
 
 Với đặc điểm tuyến tính này, ta sẽ trích xuất **max, min, mean, median công suất** của cả đoạn (từ 0 – 40Hz) và giá trị trung bình biên độ của 4 sóng cơ bản.
 
-![A table with numbers and symbols
+![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/4a0a7060-c99b-4b48-a321-61c70c1733d1)
+
 
 Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.005.png)
 
@@ -84,7 +88,8 @@ Có 21 kênh kích thích đầu vào, đặc trưng cho từng cảm xúc, tron
 
 1. **TRAINING MODEL**
 
-   ![A screenshot of a computer program
+  ![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/d56f2c49-1383-4c29-8c2d-190d7500e6eb)
+
 
 Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.007.png)
 
