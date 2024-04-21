@@ -1,22 +1,6 @@
 # Diagnosing-depression-base-on-EEG-signal
 
-# **BÁO CÁO TUẦN 8**
-
-Các công việc đã làm được trong tuần trước 
-
-- Nghiên cứu về dataset sẽ sử dụng
-- Đọc các technique đã được sử dụng với EEG
-- Triển khai trên 1 dataset
-
-Các công việc làm được trong tuần này:
-
-- Xây dựng được bộ Feature cho dataset sử dụng
-- So sánh việc sử dụng bộc lọc Band Pass Filter
-- Giảm chiều dữ liệu, tăng accuracy
-
-
-
-1. **DATASET**
+**DATASET**
 
    Các dataset về EEG là tín hiệu tin sinh, nên việc public các dataset đó rất hạn chế, và số lượng dataset cũng là rất ít. Ở đây em có nghiên cứu về 2 bộ dataset chính
 
@@ -32,7 +16,7 @@ Các công việc làm được trong tuần này:
 
 
 
-1. **TIẾN HÀNH TRIỂN KHAI TRÊN DATASET MODMA**
+**TIẾN HÀNH TRIỂN KHAI TRÊN DATASET MODMA**
 
 ![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/3e4cd466-84d0-4bf7-a31a-559657b0a885)
 
@@ -45,7 +29,6 @@ Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab1973
 
   Vì dữ liệu EEG đầu vào là gồm 128 kênh, và để đơn giản bài toán, ta sẽ rút gọn đi còn 16 kênh chủ đạo cho việc phân tích.
 
-![](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.002.png)
 
 ![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/57708b54-4cd2-4b6c-ae0a-7b2679a6ebb7)
 
@@ -86,7 +69,7 @@ Có 21 kênh kích thích đầu vào, đặc trưng cho từng cảm xúc, tron
 
 
 
-1. **TRAINING MODEL**
+**TRAINING MODEL**
 
   ![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/d56f2c49-1383-4c29-8c2d-190d7500e6eb)
 
@@ -139,7 +122,8 @@ Description automatically generated with medium confidence](Aspose.Words.da81c15
 
 Ta sẽ sử dụng tương quan Pearson trên các kênh và các kích thích đầu vào để có thể loại bớt các kênh không có nhiều ảnh hưởng tới mô hình. 
 
-![](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.015.png)
+![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/7df3f50f-98bb-4674-a172-5ea881d9019a)
+
 
 Nhận thấy rằng các channels: E36, E124, E33, E24, E52, E92, E96, E22 là những channels có tính tương quan trong tất cả các kích thích đầu vào, và ta sẽ loại bỏ các kênh đó đi. 
 
@@ -153,8 +137,10 @@ Một trong những các phổ biến nhất để thực hiện giảm kích th
 
 PCA đảm bảo rằng thông tin tối đa của tập dữ liệu gốc được dữ lại trong tập dữ liệu với số lượng đã giảm. Về kích thước và mối tương quan giữa các thành phần chính mới thu được là tối thiểu. Các tính năng mới thu được sau khi áp dụng PCA được gọi là thành phần chính PC<sub>i</sub>.Trong đó thành phần PC1 nắm bắt thông tin tối đa của tập dữ liệu gốc, tiếp theo là PC2, PC3…
 
-![](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.016.png)
+![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/dbbbcfa9-0199-47d7-bcde-b4a7c80a7c33)
 
-![](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.017.png)
+
+![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/8e0293cb-1f80-40b2-b506-2a296bb205a8)
+
 
 Dữ liệu sau khi chuẩn hóa
