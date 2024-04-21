@@ -105,13 +105,16 @@ Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab1973
 
 Ta sẽ sử dụng kiến thức Machine Learning cơ bản để train model. Dưới đây ta sẽ đi xem xét và so sánh trước và sau khi sử dụng các bộ lọc
 
-![A graph of a number of blue rectangular bars
+![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/6dc8ad5f-50dd-4c63-9fde-116975d439ab)
+
 
 Description automatically generated with medium confidence](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.009.png)
 
 Trước và sau khi lọc band pass filter (chỉ ảnh hưởng đến feature phi tuyến) (sau – trước) 
 
-![A screenshot of a black screen
+![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/e5fbaefe-396c-4b08-910e-e882e405b10d)
+
+![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/e2b5c61e-ce04-4e8a-8c1b-0a100ac05bff)
 
 Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.010.png)        ![A screenshot of a black screen
 
@@ -119,7 +122,8 @@ Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab1973
 
 *Hình ảnh feature phi tuyến trong 2 trường hợp*
 
-![A graph of blue and black bars
+![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/4dceb3fd-3c19-4ef9-95df-7f78fb3527f4)
+
 
 Description automatically generated with medium confidence](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.012.png)
 
@@ -127,7 +131,7 @@ Ta nhận thấy rằng, việc sử dụng bộ lọc Band Pass filter chỉ �
 
 Vì độ chính xác chưa cao, ta sẽ đi giảm chiều dữ liệu bằng cách tính toán các tương quan các kênh với nhau
 
-![A colorful squares with black text
+![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/b972e684-909a-47e2-bd49-a828f7801f2c)
 
 Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.013.png)     ![A colorful squares with black text
 
