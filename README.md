@@ -2,7 +2,7 @@
 
 **DATASET**
 
-   Các dataset về EEG là tín hiệu tin sinh, nên việc public các dataset đó rất hạn chế, và số lượng dataset cũng là rất ít. Ở đây em có nghiên cứu về 2 bộ dataset chính
+   Các dataset về EEG là tín hiệu tin sinh, nên việc public các dataset đó rất hạn chế, và số lượng dataset cũng là rất ít. Ở đây sẽ nghiên cứu về 2 bộ dataset chính
 
    |**MODMA (Cai – 2020)**|**Mumtaz - 2016**|
    | :-: | :-: |
