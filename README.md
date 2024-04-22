@@ -59,9 +59,6 @@ Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab1973
 
 **Non-Linear Feature**: Các đặc điểm phi tuyến được sử dụng trong phân tích là entropy phổ và entropy lắng đọng giá trị đơn (Singular – value, Spectral entropy, Permenone entropy…)
 
-![A table with numbers and letters
-
-Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.006.png)
 
 *Ví dụ minh họa đặc trưng phi tuyến*
 
@@ -80,11 +77,6 @@ Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab1973
 
 Có tất cả 53 bệnh nhân, với mỗi bệnh nhân ta sẽ trích xuất đặc điểm của từng kênh sóng một (cụ thể là ta sẽ trích xuất trên 16 channels trước). Ở đây, với mỗi channel sẽ có các đặc điểm về biên độ tuyến tính và công suất phi tuyến. Và đồng thời với nó là các kích thích đầu vào ảnh hưởng lên các đặc điểm đó.  Tổng cộng lại ta sẽ có 512 features tuyến tính và 192 features phi tuyến.
 
-![A table with numbers and letters
-
-Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.008.png)
-
-*Hình ảnh ví dụ 1 số feature ở kênh 104*
 
 Ta sẽ sử dụng kiến thức Machine Learning cơ bản để train model. Dưới đây ta sẽ đi xem xét và so sánh trước và sau khi sử dụng các bộ lọc
 
@@ -99,9 +91,6 @@ Trước và sau khi lọc band pass filter (chỉ ảnh hưởng đến feature
 
 ![image](https://github.com/mylehust/Diagnosing-depression-base-on-EEG-signal/assets/109675981/e2b5c61e-ce04-4e8a-8c1b-0a100ac05bff)
 
-Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.010.png)        ![A screenshot of a black screen
-
-Description automatically generated](Aspose.Words.da81c15c-e35b-484e-a88c-ab19735106b5.011.png)
 
 *Hình ảnh feature phi tuyến trong 2 trường hợp*
 
